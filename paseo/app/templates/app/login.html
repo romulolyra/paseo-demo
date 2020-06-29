@@ -1,0 +1,52 @@
+{% extends 'app/base.html' %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+ <div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Bem vindo ao PASEO!</h1>
+      <p class="lead">Um webapp para você conhecer coleguinhas e melhorar seu transporte diário.</p>
+    </div>
+  </div>
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+
+      }
+    </style>
+    <!-- Custom styles for this template -->
+            <link href="signin.css" rel="stylesheet">
+          </head>
+          <body class="text-center">
+            <form class="form-signin">
+          <img class="mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+          <h1 class="h3 mb-3 font-weight-normal">LOGIN</h1>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="email" id="inputEmail" class="form-control" placeholder="Digite seu emial CESAR" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Digite sua senha: " required>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="lembre de mim"> Remember me
+            </label>
+  </div>
+        <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Login</a>
+        <a href="cadastro" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Fazer cadastro</a>
+
+ </div>
+{% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Paseo{% endblock %}
+{% block content %}
+ <div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Bem vindo ao PASEO!</h1>
+      <p class="lead">Um webapp para você conhecer coleguinhas e melhorar seu transporte diário.</p>
+    </div>
+  </div>
+  <div class="row">
+      {%for usuario in usuarios %}
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://via.placeholder.com/286x180" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" >{{usuario.nome}}</h5>
+            <p class="card-text">Em breve: interesses</p>
+            <a href="#" class="btn btn-primary">botão</a>
+          </div>
+        </div>
+          {%endfor%}
+      </div>
+ </div>
+{% endblock %}
